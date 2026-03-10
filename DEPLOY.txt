@@ -1,0 +1,58 @@
+# RAM Residency - Hotel Booking System
+
+## Deployment Guide for Hostinger
+
+### Prerequisites
+1. Hostinger account with Node.js hosting plan
+2. MySQL database created in Hostinger hPanel
+
+### Upload Instructions
+
+1. **Upload to Hostinger**
+   - Create a zip file of the `ram-residency` folder
+   - Upload to `public_html` via File Manager or FTP
+   - Extract the files in public_html
+
+2. **Setup Database**
+   - Go to hPanel → Databases → phpMyAdmin
+   - Create a new database named `ram_residency`
+   - Note the database credentials (host, user, password)
+
+3. **Configure Environment**
+   - Edit the `.env` file with your database credentials:
+   ```
+   DB_HOST=your_mysql_host
+   DB_USER=your_db_username
+   DB_PASSWORD=your_db_password
+   DB_NAME=ram_residency
+   ```
+
+4. **Install Dependencies**
+   - Go to hPanel → Files → Terminal
+   - Run: `npm install`
+
+5. **Start the Server**
+   - In hPanel, go to Website → Node.js
+   - Set the app to run on port 5000
+   - Start the application
+
+### Default Login
+
+- **Admin Panel**: http://yourdomain.com/admin
+  - Email: admin@ramresidency.com
+  - Password: admin123
+
+- **Website**: http://yourdomain.com
+
+### Features
+
+- Luxury hotel website
+- Room booking with availability check
+- Admin dashboard for room/booking management
+- WhatsApp & Email notifications
+- Payment gateway integration ready
+- Mobile responsive design
+
+### Support
+
+For issues, check the server logs in Hostinger terminal.
