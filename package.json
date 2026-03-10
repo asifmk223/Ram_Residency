@@ -6,7 +6,7 @@
   "start": "node server.js",
   "dev": "nodemon server.js",
   "build": "cd frontend && npm run build"
-}
+},
   "dependencies": {
     "next": "latest",
     "bcryptjs": "^2.4.3",
